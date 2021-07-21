@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page-layout">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><span class="nav-logo">PLANET </span></li>
+                <li class="nav-item"> <a class="link" href="#">Home</a> </li>
+                <li class="nav-item"> <a class="link" href="#">Docs</a> </li>
+            </ul>
+            <ul class="nav-list nav-listend">
+                <li class="nav-item"><img src="./images/github-line.png" alt="github-logo"></li>
+                <li class="nav-item"><img src="./images/linkedin-line.png" alt="linkdin-logo"></li>
+                <li class="nav-item"><img src="./images/twitter-line.png" alt="twitter-logo"></li>
+
+            </ul>
+        </nav>
+        <aside class="sidebar">
+            <h2 class="h2" id="sidebar-show-button">Components </h2>
+            <ul class="sidebar-list">
+                <li class="sidebar-item"> <a class="link" href="#geting-started">Geting started</a> </li>
+                <li class="sidebar-item"> <a class="link" href="#avatar">Avatar</a></li>
+                <li class="sidebar-item"><a class="link" href="#badges">Badges</a></li>
+                <li class="sidebar-item"><a class="link" href="#button">Button</a> </li>
+                <li class="sidebar-item"> <a class="link" href="#card">Card</a> </li>
+                <li class="sidebar-item"> <a class="link" href="#modal">Modal</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <h3 class="h3" id="geting-started">Geting started</h3>
+            <p class="p"> For getting started just use the link as a external stylesheet use the classes</p>
+            <hr>
+            <h3 class="h3" id="avatar">Avatar</h3>
+            <p class="p">Avatar can be used to show user's profile picture on profile information page, on navigation
+                bar, in blogs grid items </p>
+            <div class="content-box">
+                <div class="img-large"><img src="./images/avatar1.png" class="img-responsive img-round  " alt=""></div>
+                <div class="img-mid"> <img src="./images/avatar1.png" class="img-responsive img-round " alt=""></div>
+                <div class="img-small"><img src="./images/avatar1.png" class="img-responsive img-round " alt=""></div>
+            </div>
+            <div class="code-display">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520src%253D%2522.%252Fimages%252Favatar1.png%2522%2520class%253D%2522img-responsive%2520img-round%2520img-large%2520%2522%2520alt%253D%2522avatar-image%2522%2520%253E%250A%2520%253Cimg%2520src%253D%2522.%252Fimages%252Favatar1%2522%2520class%253D%2522img-responsive%2520img-round%2520img-mid%2522%2520alt%253D%2522avatar-image%2522%2520%253E%250A%2520%253Cimg%2520src%253D%2522.%252Fimages%252Favatar1%2522%2520class%253D%2522img-responsive%2520img-round%2520img-small%2522%2520alt%253D%2522avatar-image%2522%2520%253E"
+                    style="max-width: 968px; width: 100%; height: 246px; border:0; transform: scale(1); overflow:auto;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <hr>
+            <h3 class="h3" id="badges">Badges</h3>
+            <p class="p">This badges can be you for the Notification to use this badge use <span
+                    class="class-highlight">.alert</span> class with another class specifiying the type of Notification
+                to use <span class="class-highlight">alert-success</span> for sucess notifiction and similarly error and
+                Notification for others </p>
+            <div class="content-box flex-direction-column">
+
+                <div class="alert alert-success"> ✔️ Success</div>
+                <div class="alert alert-error"> ❌ Error</div>
+                <div class="alert alert-notification"> 🔔 Notification</div>
+
+            </div>
+            <div class="code-display">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%2520%25E2%259C%2594%25EF%25B8%258F%2520Success%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%2520%25E2%259D%258C%2520Error%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-notification%2522%253E%2520%25F0%259F%2594%2594%2520Notification%253C%252Fdiv%253E"
+                    style="max-width: 656px; width:100%; height: 246px; border:0; transform: scale(1); overflow:auto;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <hr>
+            <h3 class="h3" id="button">Button</h3>
+            <p class="p"></p>
+            <div class="content-box">
+
+
+                <button class="button button-lg primary-button">Button</button>
+                <button class="button primary-button">Button</button>
+                <button class="button primary-button">Button</button>
+                <button class="button secondary-button">button</button>
+                <button class="button button-link">Link</button>
+
+            </div>
+            <div class="code-display">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522button%2520button-lg%2520primary-button%2522%253EButton%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520primary-button%2522%253EButton%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520primary-button%2522%253EButton%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520secondary-button%2522%253Ebutton%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522button%2520button-link%2522%253ELink%253C%252Fbutton%253E"
+                    style="max-width: 681px; width:100%; height: 286px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <hr>
+            <h3 class="h3" id="card">Card</h3>
+            <div class="content-box">
+                <div class="flex-add flex-wrap">
+                    <div class="product-card">
+                        <img src="http://placehold.it/180" class="card-img" alt="">
+                        <div class="product-details">
+                            <p class="product-heading">Card Heading</p>
+                            <p class="product-description">Product description is looking really good
+                            </p>
+                            <div class="product-pricing">
+                                <span class="product-actualprice">Rs. XXX</span>
+                                <span class="product-mrp">XXX</span>
+                                <span class="product-discount">(45%)</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="code-display">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522product-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522http%253A%252F%252Fplacehold.it%252F180%2522%2520class%253D%2522card-img%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522product-heading%2522%253ECard%2520Heading%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522product-description%2522%253EProduct%2520description%2520is%2520looking%2520really%2520good%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product-pricing%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522product-actualprice%2522%253ERs.%2520XXX%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522product-mrp%2522%253EXXX%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522product-discount%2522%253E%2845%2525%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style="max-width: 1002px; width:100%; height: 426px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <hr>
+            <h3 class="h3" id="modal">Modal</h3>
+            <div class="content-box ">
+                <div class="modal-box">
+                    <button class="modal-close button-round">x</button>
+                    <h1 class="modal-heading">modal</h1>
+                    <p class="modal-paragraph">this is a modal</p>
+                </div>
+            </div>
+            <div class="code-display">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522modal-close%2520button-round%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522modal-heading%2522%253Emodal%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522modal-paragraph%2522%253Ethis%2520is%2520a%2520modal%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style="max-width: 749px; width: 100%; height: 286px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+
+
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+:root{
+ --primary-color : #FCD34D;
+ --border-color: #e6e6e6;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.page-layout{
+    display: grid;
+    grid-template-areas: "nav nav nav nav"
+                         "sidebar main main main";
+    grid-template-columns: 18% auto;
+}
+.class-highlight{
+    background-color: #D1D5DB;
+    border-radius: .2rem;
+}
+.nav{
+    
+    width: 100%;
+    z-index: 10;
+    
+  background-color: white;
+    grid-area:  nav;
+   padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 20px #E5E7EB;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+
+}
+.nav-listend{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.nav-listend:last-child{
+    margin-right: 2rem;
+}
+.nav-item{
+    font-size: 1.5rem;
+    margin-left: 2rem; 
+    
+}
+.nav-item:hover{
+    color: var(--primary-color)
+}
+.nav-logo{
+    color:var(--primary-color)
+}
+
+
+.link{
+   text-decoration: none;
+   color:inherit;
+   
+   
+}
+
+.h2{
+    font-size: 2rem;
+
+
+}
+.h3{
+    font-size: 2rem;
+    font-weight: bold;
+    
+   
+}
+.p{
+    font-size: 1.3rem;
+    
+}
+.sidebar{
+    grid-area: sidebar;
+    padding-right: 3rem;
+    z-index: 9;
+    width: 10%;
+    margin:3.5rem 3rem;
+    position: fixed;
+    
+    border-right: black 1px solid;
+    
+    height: auto;
+}
+.sidebar-list{
+    list-style: none;
+    padding: 0;
+}
+.sidebar-item{
+    margin: 2rem 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.sidebar-item:hover{
+    color: var(--primary-color)
+}
+.main{
+    grid-area : main ;
+    padding: 1rem;
+    margin-top: 3rem;
+    
+    
+    
+}
+.content-box{
+    border: 1px solid var(--border-color);
+    padding: 2rem 0rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: baseline;
+    
+}
+
+
+.code-display{
+    width:100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+.img-responsive{
+    width:100%;
+    height:auto;
+}
+.img-round{
+    border-radius: 50%;
+}
+.img-small{
+    width: 4rem;
+    height: auto;
+}
+.img-mid{
+    width: 5rem;
+    height: auto;
+}
+.img-large{
+    width: 7rem;
+    height: auto;
+}
+.alert{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0.2rem;
+    margin:  1rem;
+    padding: 1rem;
+    width:80%;
+    max-width: 500px;
+    
+    
+}
+ .alert-success{
+   background-color: #34D399;
+   color: #D1FAE5;
+   
+}
+.alert-error{
+    background-color: #F87171;
+    color:#FEE2E2 ;
+}
+.alert-notification{
+    background-color:#FBBF24 ;
+    color:#FEF3C7;
+}
+.button-round{
+    border-radius: 60%;
+    background-color:#F8FAFC;
+}
+.button{
+    border-radius:  15%;
+    padding: 1rem;
+    margin: 1rem;
+}
+.primary-button{
+    background-color: #FF3E6C;
+    border: 1px solid #FF3E6C;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer
+}
+.primary-button:hover{
+   opacity: .9;
+}
+.secondary-button{
+   border: 1px solid #d4d5d9;
+   color: #282c3f;
+}
+.secondary-button:hover{
+    border: 1px solid #535766
+}
+.button-link{
+    border: none;
+}
+.button-link:hover{   
+    text-decoration: underline;
+}
+
+.product-card{
+    border: 1px solid black;
+    margin: 1rem;
+    width:180px;
+    height: auto;
+    position: relative;
+}
+
+.product-details{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.product-heading{
+ font-weight: 700 ;
+ margin:0;
+ 
+}
+.product-description{
+    overflow: hidden;
+    white-space: nowrap;
+    margin:2px 10px;
+}
+.product-actualprice{
+    font-weight: 600;
+    margin:  2px 0;
+}
+.product-mrp{
+    text-decoration: line-through;
+}
+.product-discount{
+    color: #FBBF24;
+}
+.modal-box{
+    margin: 1rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#E5E7EB;
+    flex-direction: column;
+    position: relative;
+    width:90%;
+
+}
+.button-round{
+    border-radius: 60%;
+    background-color:#F8FAFC;
+}
+.modal-close{
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    
+}
+
+@media  screen and (max-width: 1310px) {
+    .page-layout{
+        grid-template-columns: 25% 75%;
+    }
+    .sidebar{
+        padding-right: 5rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    .sidebar-list{
+      display: none;
+    }
+    .page-layout{
+    display: flex;
+    flex-direction: column;
+    }
+    .sidebar{
+        background-color: var(--border-color);
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    .h2{
+      font-size: 1.3rem;
+    }
+    .main{
+       margin-top: 6rem;
+       
+    }
+    .show-sidebar{
+        display: initial;
+    }
+    
+
+}
